@@ -1,0 +1,22 @@
+{
+    "name": "cleme/admin-groupe2",
+    "require": {
+        "symfony/var-dumper": "^5.0"
+    },
+    "authors": [
+        {
+            "name": "Clément Haller",
+            "email": "clement.haller@hetic.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "src/Controller",
+            "Model\\": "src/Model",
+            "View\\": "src/View"
+         },
+        "files": [
+            "init.php"
+        ]
+    }
+}
