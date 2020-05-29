@@ -1,7 +1,8 @@
 {
     "name": "cleme/admin-groupe2",
     "require": {
-        "symfony/var-dumper": "^5.0"
+        "symfony/var-dumper": "^5.0",
+      "ext-pdo": "*"
     },
     "authors": [
         {

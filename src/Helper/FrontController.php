@@ -5,6 +5,7 @@ namespace Helper;
 
 
 use Controller\CoucouController;
+use Controller\PageController;
 
 class FrontController
 {
@@ -13,9 +14,13 @@ class FrontController
         $action = $_POST[ADMIN_ACTION_PARAM] ?? $_GET[ADMIN_ACTION_PARAM] ?? '';
 
         switch ($action) {
-            case "hello":
-                $coucouController = new CoucouController();
-                $coucouController->getHelloWord();
+            case 'page.add':
+                $pageController = new PageController();
+                $pageController->add();
+                break;
+            case 'page.update':
+                break;
+            case "page.delete":
                 break;
             default:
                 $coucouController = new CoucouController();

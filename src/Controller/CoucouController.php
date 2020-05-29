@@ -6,6 +6,7 @@ namespace Controller;
 
 use Model\CoucouModel;
 use View\CoucouView;
+use View\PageView;
 
 class CoucouController
 {
@@ -18,9 +19,9 @@ class CoucouController
 
     public function getCoucou() {
         $model = new CoucouModel();
-        $view = new CoucouView();
+        $view = new PageView();
         $word = $model->getWord2();
-        $view->index($word);
+        $view->form();
     }
 
 }

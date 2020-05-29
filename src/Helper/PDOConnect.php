@@ -16,6 +16,6 @@ class PDOConnect
                 die($e->getMessage());
             }
         }
-        return self::getPdo();
+        return self::$pdo;
     }
 }
